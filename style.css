@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #0054ff;
+    --lighter-primary-color: #049bff;
+    --darker-primary-color: #061c35;
+    --secondary-color: #df6c00;
+    --darker-secondary-color: #382009;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #181818; /* Cor de background do YouTube */
+    color: #FFFFFF; /* Cor branca na fonte */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.accent-color{
+    color: var(--lighter-primary-color);
+}
+.content-div {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+
+    background-color: rgba(20, 20, 20, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+#title-container{
+    flex-direction: row;
+    height: 90vh;
+}
+#midiasons{
+    display: flex;
+    align-items: center;
+}
+#midiasons h3{
+    color: rgb(197, 197, 197);
+}
+#icon-midiasons{
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.6rem;
+}
+#title-desc{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+#small-title{
+    margin: 0.5rem 0;
+}
+#title-desc p{
+    margin-top: 0;
+}
+#cover{
+    margin-right: 2rem;
+
+    max-height: 20rem;
+    border-radius: 20px;
+}
+#buy{
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--lighter-primary-color);
+    border-radius: 2rem;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+
+    font-weight: bolder;
+    font-size: medium;
+
+    transition: background-color 0.4s;
+
+    width: fit-content;
+}
+
+
+#objective-container{
+    background: linear-gradient( 205deg, var(--darker-primary-color), var(--primary-color))
+}
+#objective-container h1{
+    margin-bottom: 0.5rem;
+}
+#objective-container p{
+    margin: 0;
+    margin-bottom: 1rem;
+    max-width: 30rem;
+    text-align: center ;
+}
+#platforms {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.platform{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.platform-icon{
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+.platform-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#content-container li{
+    padding: .5rem 0;
+}
+#content-container h1{
+    margin-bottom: 0;
+}
+#content-container h2{
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+}
+#comparison{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.comparison-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.comparison-item p{
+    margin: 0.5rem;
+    font-size: larger;
+}
+.comparison-item img{
+    width: 25rem;
+    border-radius: 0.9rem;
+}
+#buy-container{
+    background: linear-gradient( 45deg, var(--darker-primary-color), #303030);
+}
+
+#buy-now-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    border-radius: 1rem;
+}
+#buy-now{
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+}
+#price{
+    text-align: center;
+    font-size: 3rem;
+
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+#buy-div{
+    border-left: 1px solid #404040; 
+    padding:1rem; 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+/* hover */
+#buy:hover{
+    background-color: var(--lighter-primary-color);
+}
+
+
+/*responsive*/
+@media screen and (max-width: 600px){
+    #title-container{
+        flex-direction: column-reverse;
+        height: 80vh;
+    }
+    #midiasons h3{
+        font-size: 1rem;
+    }
+    #icon-midiasons{
+        height: 2rem;
+    }
+    #small-title{
+        font-size: 1.7rem;
+    }
+    #title-desc p{
+        text-align: justify;
+    }
+    #buy{
+        align-self: center;
+    }
+    #cover{
+        display: none;
+    }
+    #platforms{
+        flex-direction: column;
+    }
+    #comparison{
+        flex-direction: column;
+    }
+    .comparison-item img{
+        width: 100%;
+    }
+
+    #buy-now-container{
+        flex-direction: column;
+    }
+    #buy-now{
+        font-size: 4rem;
+    }
+    #buy-now-container *{
+        text-align: center;
+    }
+    #buy-div{
+        border: none;
+    }
+}
