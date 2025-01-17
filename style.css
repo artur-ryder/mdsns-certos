@@ -5,6 +5,7 @@
     --lighter-primary-color: #049bff;
     --darker-primary-color: #061c35;
     --secondary-color: #df6c00;
+    --lighter-secondary-color: #ffa959;
     --darker-secondary-color: #382009;
 }
 *{
@@ -17,6 +18,11 @@ body {
 
     background-color: #181818; /* Cor de background do YouTube */
     color: #FFFFFF; /* Cor branca na fonte */
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 a{
     text-decoration: none;
@@ -34,6 +40,11 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+#video-menor{
+    width: 25rem !important;
+}
+
 #header{
     position: fixed;
     top: 0;
@@ -99,10 +110,24 @@ a{
 
     width: fit-content;
 }
+#buy2{
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--lighter-secondary-color);
+    border-radius: 2rem;
+    color: white;
+    background-color: var(--secondary-color);
+    cursor: pointer;
 
+    font-weight: bolder;
+    font-size: medium;
+
+    transition: background-color 0.4s;
+
+    width: fit-content;
+}
 
 #objective-container{
-    background: linear-gradient( 205deg, var(--darker-primary-color), var(--primary-color))
+    background: linear-gradient( 205deg, var(--secondary-color), var(--primary-color))
 }
 #objective-container h1{
     margin-bottom: 0.5rem;
@@ -148,12 +173,14 @@ a{
     align-items: center;
     gap: 1rem;
 }
-.comparison-item{
+.comparison-item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+}
+.comparison-item video{
+    width: 17rem;
+    border-radius: 1rem;
+    margin: auto;
 }
 .comparison-item p{
     margin: 0.5rem;
@@ -201,10 +228,22 @@ a{
 #buy:hover{
     background-color: var(--lighter-primary-color);
 }
+#buy2:hover{
+    background-color: var(--lighter-secondary-color);
+}
 
 
 /*responsive*/
 @media screen and (max-width: 600px){
+    iframe{
+        width: 100%;
+    }
+    .botoes{
+        flex-direction: column;
+    }
+    #video-menor{
+        width: 17rem !important;
+    }
     #title-container{
         flex-direction: column-reverse;
         height: 80vh;
