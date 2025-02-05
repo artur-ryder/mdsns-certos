@@ -40,7 +40,10 @@ a{
     justify-content: center;
     align-items: center;
 }
-
+#start-buttons{
+    display: flex; 
+    gap: 1rem;
+}
 #video-menor{
     width: 25rem !important;
 }
@@ -109,6 +112,15 @@ a{
     transition: background-color 0.4s;
 
     width: fit-content;
+}
+#discord{
+    border-radius: 50rem;
+    border: 2px solid #3b43a3;
+    color: white;
+    background-color: #5865F2;
+    font-weight: bolder;
+    font-size: medium;
+    padding: 0.5rem 1rem;
 }
 #buy2{
     padding: 0.5rem 1rem;
@@ -190,6 +202,16 @@ a{
     width: 25rem;
     border-radius: 0.9rem;
 }
+
+
+#whoami-container{
+    background-color: black;
+    height: 75vh;
+}
+#whoami-container p{
+    text-align: justify;
+}
+
 #buy-container{
     background: linear-gradient( 45deg, var(--darker-primary-color), #303030);
 }
@@ -237,6 +259,13 @@ a{
 @media screen and (max-width: 600px){
     iframe{
         width: 100%;
+    }
+    #start-buttons{
+        flex-direction: column;
+    }
+    #start-buttons *{
+        width: fit-content;
+        margin: auto;
     }
     .botoes{
         flex-direction: column;
