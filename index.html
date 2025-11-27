@@ -1,119 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midia Sons | Edite Como Eu</title>
-    <meta name="description" content="Todos os meus truques de edição, para você aprender.">
-    <meta name="keywords" content="shorts, videos curtos, ebook, como crescer no shorts, como fazer shorts, como fazer videos curtos, midia sons, ebook midia sons, como editar estilo midia sons, como editar, como editar midia sons">
-    <meta name="author" content="Artur">
+    <title>Produzindo Os Melhores Curtos</title>
+
+    <link rel="icon" type="image/png" href="assets/midiaSonsLogo.png">
 
     <link rel="stylesheet" href="style.css">
-
-    <link rel="icon" href="icon.jpg" type="image/x-icon">
-
 </head>
 <body>
-    <header id="header">
-        <div id="midiasons">
-            <img id="icon-midiasons" src="icon.jpg" alt="midia sons icone">
-            <h3>Mídia Sons</h3>
-        </div>
-        <a href="https://youtube.com/@midiasons">Meu Canal no YouTube</a>
-    </header>
-    <div class="content-div" id="title-container">
-        <div>
-            <img id="cover" src="capa.png" alt="capa ebook midia sons curtos da maneira certa">
-        </div>
-        <div id="title-desc">
-            <div id="midiasons">
-                <img id="icon-midiasons" src="icon.jpg" alt="midia sons icone">
-                <h3>Mídia Sons</h3>
-            </div>
-            <h1 id="small-title">Edite os <span class="accent-color">melhores</span> curtos.</h1>
-            <p>Aprenda diversos estilos de edição da sua escolha. Além disso, Dicas, Insights e Truques para viralizar. <span style="font-weight: 700;">Você</span> vai me ajudar a construir o curso.
-            </p>
-            <div id="start-buttons">
-                <button id="buy"><a href="https://pay.kirvano.com/45a1d491-b75b-4a0b-9273-56c126538dfc" target="_blank">Quero Aprender</a></button>
-                <button id="discord"><a href="https://discord.gg/hz5yFGfK" target="_blank">Servidor do Discord</a></button>
+    <div id="start" style="overflow: hidden; position: relative;">   
+        <div id="startContent" style="position: relative; z-index: 2;">
+            <img id="startIcon" src="assets/icon.png" alt="editando os melhores curtos catarse midiasons imagem">
+            <div class="verticalLine"></div>
+            <div id="startTitleAndDescription">
+                <h1 id="startTitle">Produzindo os MELHORES Curtos</h1>
+                <p id="startDescription">Aprenda a escrever, gravar, editar e viralizar os melhores vídeos curtos e longos que você já produziu na vida. E tenha as melhores dicas sobre produção de conteúdo curto para plataformas como Youtube Shorts, Tiktok e Instagram Reels.</p>
+                <a id="buyLink" href="https://pay.kirvano.com/45a1d491-b75b-4a0b-9273-56c126538dfc" target="_blank">
+                    <button id="startBuyButton">Comprar</button>
+                </a>
             </div>
         </div>
+        <video id="backgroundVideo" src="assets/background.mp4" autoplay muted loop playsinline preload="auto">
+        </video>
     </div>
 
-    <div class="content-div" id="objective-container">
-        <h1>Objetivo</h1>
-        <div>
-            <p>Ensinar diversos estilos de edição escolhidos por <b>você</b>, e tudo que não pode faltar em um vídeo curto viral. <br><span style="font-weight: 700;">Aprenda a Viralizar Como Eu:</span></p>
-        </div>
-        <div id="platforms">
-            <div class="platform">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sahhO0d_2Z8?si=JqcQ6CPNJsLTRONY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="platform">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/I5NShmVcTlU?si=Uujkkn-orsNuTEFD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-        <button id="buy"><a href="https://pay.kirvano.com/45a1d491-b75b-4a0b-9273-56c126538dfc" target="_blank">Quero Aprender</a></button>
+    <div id="results">
+        <h1>Meus <b>Resultados</b></h1>
+        <p style="margin: 0; font-size: smaller;">(durante 1 ano)</p>
+        <img src="assets/tiktok stats.png" alt="">
+        <img src="assets/youtube stats.png" alt="">
     </div>
 
-    <div class="content-div" id="content-container">
-        <h1>Conteúdo</h1>
-        <div>
-            <div>
-                <h2>Aprenda a <span class="accent-color">Edição Ideal</span> para Vídeos Curtos</h2>
-                <div class="comparison-item">
-                    <img src="analytics.png" alt="" style="width: 100%;">
-                </div>
-
-                <hr style="margin: 2rem; color: rgb(128, 168, 255)">
-
-                <h2>A minha <span class="accent-color">Própria Edição</span></h2>
-                <div class="comparison-item">
-                    <video src="video snoop dogg.mp4" controls></video>
-                </div>
-            </div>
-
-            <hr style="margin: 2rem; color: rgb(128, 168, 255)">
-
-            <h2>E muito mais!</h2>
-            <ul>
-                <li>Como Fazer Uma Legenda Rápido e Fácil</li>
-                <li>Aprenda a Roteirizar um Vídeo Curto</li>
-                <li>Tudo de Essencial Em Um Vídeo Curto</li>
-                <li>Essenciais Para Viralizar um Vídeo</li>
-                <li>Analise de Métricas do YouTube</li>
-                <li>Aulas minhas ensinando estilos escolhidos por você</li>
-                <li>Tudo Isso em <b>Qualquer Programa de Edição</b></li>
+    <div id="tiktokTipsContainer">
+        <div id="midiasonsContainer">
+            <ul class="tiktokTipList">
+                <li>Como criar uma Identidade Visual</li>
+                <li>Como fazer roteiros melhores</li>
+                <li>IA para produtividade</li>
+                <li>As melhores Dicas para TikTok</li>
+                <li>Como Analisar Métricas</li>
+                <li>Dicas para aumentar o engajamento</li>
+                <li>Dicas Gerais para produzir conteúdo</li>
+                <li>Edição da MusicMediaCo</li>
+                <li>Essenciais para criar conteúdo</li>
             </ul>
+            <div class="channelCredits"><img class="channelMiniIcon" src="assets/midiaSonsLogo.png"> Por Midia Sons</div>
+            <div class="divBackground" id="midiasonsBackground"></div>
         </div>
+        <h1 id="mainTiktokTipsTitle">Conteúdos</h1>
     </div>
-
-    <div class="content-div" id="viralizar-container"></div>
-
-    <div class="content-div" id="whoami-container">
-        <h1>Quem Sou Eu?</h1>
-        <div id="title-desc" style="width: 34rem; max-width: 100%;">
-            <p>Meu nome é Artur, dono do canal <span class="accent-color">Mídia Sons</span>. Um canal do YouTube e Tiktok com aproximadamente <span class="accent-color">30 Milhões de visualizações</span> acumuladas entre plataformas em 3 meses de existência.</p>
-            <img style="width: auto; border-radius: 1rem;" src="canal.png" alt="canal midia sons print">
-        </div>
-        
-        
-    </div>
-
-    <div class="content-div" id="buy-container">
-        <div id="buy-now-container">
-            <div>
-                <h1 id="buy-now">COMPRE<br><span class="accent-color">AGORA</span></h1>
-                <p></p>
+    <div id="videoShowcase">
+        <div id="videoShowcaseContent">
+            <video preload controls loop id="showcaseVideo" src="assets/video.mp4"></video>
+            <div class="verticalLine"></div>
+            <div id="videoDescription">
+                <h3 id="bonus">BÔNUS</h3>
+                <h1 id="videoShowcaseTitle">Aprenda Essa Edição!</h1>
+                <p id="videoShowcaseDescription">Aprenda o estilo de edição utilizado pelo <b>@midiasons</b> durante vários meses. Este estilo, também é utilizado por vários canais estrangeiros, como <b>@musicmediaco</b>.</p>
+                <p id="videoShowcaseStats">Este Vídeo Possui Aproximadamente <b>2 Milhões de Views</b> no TikTok.</p>
+                <a id="buyLink" href="https://pay.kirvano.com/45a1d491-b75b-4a0b-9273-56c126538dfc" target="_blank">
+                <button id="startBuyButton">Comprar</button>
+            </a>
             </div>
-            <div id="buy-div">
-                <h1 style="margin: 0;color: rgb(0, 174, 255);font-size: 1.4rem;">Por Apenas:</h1>
-                <h1 id="price">R$ 47,90</h1>
-                <button id="buy"><a href="https://pay.kirvano.com/45a1d491-b75b-4a0b-9273-56c126538dfc" target="_blank">Quero Aprender</a></button>
-                <h1 style="font-weight: 300;margin: 0;color: rgb(221, 221, 221);font-size: 0.9rem; max-width: 20rem; text-align: center; margin-top: 1rem;"><span style="font-weight: 700;">Ganhe Gratuitamente:</span> <br>Pack de Presets de Scripts<br>Mini Curso Sobre Viralização</h1>
-            </div>
+            
         </div>
     </div>
+
+    <div id="tiktokTipsContainer">
+        <div id="midiasonsContainer">
+            <h1 class="tiktokTipTitle">Midia Sons</h1>
+            <p id="channelDescription">Olá, meu nome é Artur, e eu sou dono do canal @midiasons. Um perfil do TikTok e YouTube que soma mais de 240 mil seguidores entre as plataformas, além de mais de 100 Milhões de views acumuladas. Sou editor há 4 anos, e comecei com o canal há mais de 1 ano. Estudei durante vários meses para começar o canal da forma correta, e tenho bastante conhecimento para compartilhar com você.</p>
+            <div class="divBackground" id="midiasonsBackground"></div>
+        </div>
+        <h1 id="mainTiktokTipsTitle">Quem sou eu?</h1>
+    </div>
+    
+    <div id="buyNow">
+        <h1>Compre Agora</h1>
+        <div id="buyNowContent">
+            <p id="buyNowDescription">Adquira o conteúdo completo com dicas para edição de vídeos curtos e roteirização, e comece a produzir os melhores conteúdos para o TikTok, YouTube Shorts e Instagram Reels hoje mesmo!</p>
+            <div id="prices">
+                <p id="originalPrice">De: R$97,00</p>
+                <p id="discountedPrice">Por: R$37,90</p>
+            </div>
+            <a id="buyLink" href="https://pay.kirvano.com/45a1d491-b75b-4a0b-9273-56c126538dfc" target="_blank">
+                <button id="startBuyButton">Comprar</button>
+            </a>
+    </div>
+
+    <footer>
+        <hr>
+        <p style="font-size: smaller; text-align: center;">© 2025 Midia Sons. Todos os direitos reservados.</p>
+        <p style="font-size: smaller; text-align: center;">Conteúdo hospedado na plataforma Kirvano</p>
+    </footer>
 </body>
 </html>
