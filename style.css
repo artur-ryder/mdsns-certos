@@ -132,12 +132,12 @@ body{
     filter: blur(10px) brightness(0.07);
 }
 #midiasonsBackground{
-    background-image: url("assets/midiasonsLogo.png");
+    background-image: url("https://i.imgur.com/tPRbhTZ.png");
     background-size: cover;
     background-position: center;
 }
 #catarseBackground{
-    background-image: url("assets/catarseLogo.jpg");
+    background-image: url("https://i.imgur.com/tPRbhTZ.png");
     background-size: cover;
     background-position: center;
 }
@@ -401,4 +401,5 @@ body{
     #backgroundVideo{
         filter: blur(4px) brightness(0.15); 
     }
+
 }
