@@ -12,6 +12,159 @@
     <link rel="icon" type="image/png" href="assets/midiaSonsLogo.png">
 
     <link rel="stylesheet" href="style.css">
+
+    <style>*{
+    font-family: 'Poppins';
+}
+a{
+    text-decoration: none;
+    color: white
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    border: 0;
+    padding: 0 2rem;
+
+    height: 100%;
+
+    color: white;
+    background: linear-gradient(to top, #003070 0%, #000a18 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+}
+#big-logo{
+    width: 20rem;
+    height: auto;
+}
+#socials{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.social{
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    background-color: rgba(10, 10, 10, 40%);
+    backdrop-filter: blur(10px);
+
+    border: solid 1px white;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    max-width: 25rem;
+
+    aspect-ratio: 1 / 1;
+
+    font-size: large;
+
+    transition: all .3s;
+}
+
+.social-wide{
+    grid-column: span 2;
+    aspect-ratio: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+.social-wide .little-text{
+    font-size: medium;
+    color: rgb(211, 211, 211);
+}
+.social:hover{
+    transform: scale(110%);
+}
+
+.social img{
+    width: 5rem;
+
+    filter: invert() brightness(1000);
+}
+
+.social-wide img{
+    filter: none;
+    border-radius: .5rem;
+}
+
+/* container central mais controlado */
+#content{
+    width: 100%;
+    max-width: 600px;
+}
+
+/* ================== TABLET ================== */
+
+@media (max-width: 768px){
+
+    #big-logo{
+        width: 16rem;
+    }
+
+    #socials{
+        gap: 1rem;
+    }
+
+    .social{
+        padding: .8rem;
+        font-size: medium;
+    }
+
+    .social img{
+        width: 4rem;
+    }
+
+}
+
+/* ================== CELULAR ================== */
+
+@media (max-width: 480px){
+
+    body{
+        padding: 0 1rem;
+    }
+
+    #big-logo{
+        width: 13rem;
+    }
+
+    #socials{
+        gap: .8rem;
+    }
+
+    .social{
+        font-size: 0.9rem;
+        padding: .7rem;
+    }
+
+    .social img{
+        width: 3rem;
+    }
+
+    .social:hover{
+        transform: none;
+    }
+
+}</style>
 </head>
 <body>
     <div id="content">
@@ -66,4 +219,5 @@
     </div>
     <div style='width: 100vw; height: 100vh; background-image: url("https://midiasons.com/assets/midiaSonsLogo.png"); position: absolute; background-size: cover;background-position: center; z-index: -100; filter: brightness(.1);'></div>
 </body>
+
 </html>
